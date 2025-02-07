@@ -1,0 +1,58 @@
+{
+  "navigation": {
+    "search": {
+      "tr": "Ara...",
+      "en": "Search..."
+    },
+    "notifications": {
+      "tr": "Bildirimler",
+      "en": "Notifications"
+    }
+  },
+  "sidebar": {
+    "menu": {
+      "ai": {
+        "tr": "Yapay Zeka",
+        "en": "AI"
+      },
+      "crm": {
+        "tr": "Müşteri İlişkileri",
+        "en": "CRM"
+      },
+      "ecommerce": {
+        "tr": "E-Ticaret",
+        "en": "eCommerce"
+      },
+      "crypto": {
+        "tr": "Kripto",
+        "en": "Cryptocurrency"
+      },
+      "investment": {
+        "tr": "Yatırım",
+        "en": "Investment"
+      },
+      "learning": {
+        "tr": "Öğrenme Sistemi",
+        "en": "Learning System"
+      },
+      "nft": {
+        "tr": "NFT ve Oyun",
+        "en": "NFT & Gaming"
+      },
+      "analytics": {
+        "tr": "Analitik",
+        "en": "Analytics"
+      }
+    }
+  },
+  "common": {
+    "darkMode": {
+      "tr": "Koyu Mod",
+      "en": "Dark Mode"
+    },
+    "lightMode": {
+      "tr": "Açık Mod",
+      "en": "Light Mode"
+    }
+  }
+}
