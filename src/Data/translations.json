@@ -9,6 +9,7 @@
       "en": "Notifications"
     }
   },
+
   "sidebar": {
     "menu": {
       "ai": {
@@ -53,6 +54,178 @@
     "lightMode": {
       "tr": "Açık Mod",
       "en": "Light Mode"
+    },
+    "perDay": {
+      "tr": "Günlük",
+      "en": "Per Day"
+    },
+    "months": {
+      "Jan": {
+        "tr": "Şub",
+        "en": "Jan"
+      },
+      "Feb": {
+        "tr": "Ocak",
+        "en": "Feb"
+      },
+      "Mar": {
+        "tr": "Mar",
+        "en": "Mar"
+      },
+      "Apr": {
+        "tr": "Nis",
+        "en": "Apr"
+      },
+      "May": {
+        "tr": "May",
+        "en": "May"
+      },
+      "Jun": {
+        "tr": "Haz",
+        "en": "Jun"
+      },
+      "Jul": {
+        "tr": "Tem",
+        "en": "Jul"
+      },
+      "Aug": {
+        "tr": "Ağu",
+        "en": "Aug"
+      },
+      "Sep": {
+        "tr": "Eyl",
+        "en": "Sep"
+      },
+      "Oct": {
+        "tr": "Eki",
+        "en": "Oct"
+      },
+      "Nov": {
+        "tr": "Kas",
+        "en": "Nov"
+      },
+      "Dec": {
+        "tr": "Ara",
+        "en": "Dec"
+      }
+    },
+    "salesChartDetail": {
+      "tr": "Satış",
+      "en": "Sale"
+    },
+    "days": {
+      "Sun": {
+        "tr": "Paz",
+        "en": "Sun"
+      },
+      "Mon": {
+        "tr": "Pzt",
+        "en": "Mon"
+      },
+      "Tue": {
+        "tr": "Sal",
+        "en": "Tue"
+      },
+      "Wed": {
+        "tr": "Çar",
+        "en": "Wed"
+      },
+      "Thu": {
+        "tr": "Per",
+        "en": "Thu"
+      },
+      "Fri": {
+        "tr": "Cum",
+        "en": "Fri"
+      },
+      "Sat": {
+        "tr": "Cmt",
+        "en": "Sat"
+      }
+    }
+  },
+  "dashboard": {
+    "ai": {
+      "totalUsers": {
+        "tr": "Toplam Kullanıcı",
+        "en": "Total Users",
+        "information": {
+          "tr": "Son 30 Gündeki Kullanıcı Sayısı",
+          "en": "Last 30 Days Users"
+        }
+      },
+      "totalSubs": {
+        "tr": "Toplam Abone",
+        "en": "Total Subscription",
+        "information": {
+          "tr": "Son 30 Gündeki Abone Sayısı",
+          "en": "Last 30 Days Subscriptions"
+        }
+      },
+      "totalFreeUsers": {
+        "tr": "Toplam Ücretsiz Kullanıcı",
+        "en": "Total Free Users",
+        "information": {
+          "tr": "Son 30 Gündeki Kullanıcı Sayısı",
+          "en": "Last 30 Days Users"
+        }
+      },
+      "totalIncome": {
+        "tr": "Toplam Gelir",
+        "en": "Total Income",
+        "information": {
+          "tr": "Son 30 Gündeki Gelir",
+          "en": "Last 30 Days Income"
+        }
+      },
+      "salesStatus": {
+        "title": {
+          "tr": "Satış İstatistik",
+          "en": "Sales Statistic"
+        }
+      },
+      "totalSubsChart": {
+        "title": {
+          "tr": "Toplam Abone",
+          "en": "Total Subscription"
+        }
+      },
+      "userOverview": {
+        "title": {
+          "tr": "Kullanıcıya Genel Bakış",
+          "en": "User Overview"
+        },
+        "period":{
+          "tr": "Bugün",
+        "en":"Today"
+        },
+        "new": {
+          "tr": "Yeni",
+          "en": "New"
+        },
+        "subscribed": {
+          "tr": "Abone",
+          "en": "Subscribed"
+        }
+      },
+      "userTable": {
+        "name": {
+          "tr": "Kullanıcılar",
+          "en": "Users"
+        },
+        "date": {
+          "tr": "Kayıt Tarihi",
+          "en": "Registered On"
+        },
+        "status": {
+          "tr": "Durum",
+          "en": "Status"
+        },
+        "latestRgs": {
+          "tr": "Son Kayıtlı",
+          "en": "Latest Registered"
+        }
+      }
     }
   }
 }

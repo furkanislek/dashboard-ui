@@ -9,7 +9,7 @@
       "en": "Notifications"
     }
   },
-  
+
   "sidebar": {
     "menu": {
       "ai": {
@@ -54,6 +54,42 @@
     "lightMode": {
       "tr": "Açık Mod",
       "en": "Light Mode"
+    }
+  },
+  "dashboard": {
+    "ai": {
+      "totalUsers": {
+        "tr": "Toplam Kullanıcı",
+        "en": "Total Users",
+        "information" : {
+          "tr" : "Son 30 Gündeki Kullanıcı Sayısı",
+          "en" : "Last 30 Days Users"
+        }
+      },
+      "totalSubs": {
+        "tr": "Toplam Abone",
+        "en": "Total Subscription",
+        "information": {
+          "tr": "Son 30 Gündeki Abone Sayısı",
+          "en": "Last 30 Days Subscriptions"
+        }
+      },
+      "totalFreeUsers": {
+        "tr": "Toplam Ücretsiz Kullanıcı",
+        "en": "Total Free Users",
+        "information": {
+          "tr": "Son 30 Gündeki Kullanıcı Sayısı",
+          "en": "Last 30 Days Users"
+        }
+      },
+      "totalIncome": {
+        "tr": "Toplam Gelir",
+        "en": "Total Income",
+        "information": {
+          "tr": "Son 30 Gündeki Gelir",
+          "en": "Last 30 Days Income"
+        }
+      }
     }
   }
 }
