@@ -21,68 +21,53 @@ const Sidebar = () => {
   const dispatch = useDispatch<AppDispatch>();
   const openStatus = useSelector((state: RootState) => state.navbar.openStatus);
   const isDarkMode = useSelector((state: RootState) => state.theme.isDarkMode);
-  const language = useSelector((state: RootState) => state.language.isEnglish);
+  const isEnglish = useSelector((state: RootState) => state.language.isEnglish);
+
   const SIDEBAR_ITEMS = [
     {
-      name: language
-        ? translations.sidebar.menu.ai.en
-        : translations.sidebar.menu.ai.tr,
+      name: translations.sidebar.menu.ai[isEnglish?"en":"tr"],
       icon: BarChart2,
       color: "#6366f1",
       path: "/",
     },
     {
-      name: language
-        ? translations.sidebar.menu.crm.en
-        : translations.sidebar.menu.crm.tr,
+      name:  translations.sidebar.menu.crm[isEnglish?"en":"tr"],
       icon: ShoppingBag,
       color: "#8B5CF6",
       path: "/products",
     },
     {
-      name: language
-        ? translations.sidebar.menu.ecommerce.en
-        : translations.sidebar.menu.ecommerce.tr,
+      name:  translations.sidebar.menu.ecommerce[isEnglish?"en":"tr"],
       icon: Users,
       color: "#EC4899",
       path: "/users",
     },
     {
-      name: language
-        ? translations.sidebar.menu.crypto.en
-        : translations.sidebar.menu.crypto.tr,
+      name:translations.sidebar.menu.crypto[isEnglish?"en":"tr"],
       icon: DollarSign,
       color: "#10B981",
       path: "/sales",
     },
     {
-      name: language
-        ? translations.sidebar.menu.investment.en
-        : translations.sidebar.menu.investment.tr,
+      name:translations.sidebar.menu.investment[isEnglish?"en":"tr"],
       icon: ShoppingCart,
       color: "#F59E0B",
       path: "/orders",
     },
     {
-      name: language
-        ? translations.sidebar.menu.learning.en
-        : translations.sidebar.menu.learning.tr,
+      name: translations.sidebar.menu.learning[isEnglish?"en":"tr"],
       icon: Settings,
       color: "#6EE7B7",
       path: "/settings",
     },
     {
-      name: language
-        ? translations.sidebar.menu.nft.en
-        : translations.sidebar.menu.nft.tr,
+      name:  translations.sidebar.menu.nft[isEnglish?"en":"tr"],
       icon: Settings,
       color: "#6EE7B7",
       path: "/settings",
     },
     {
-      name: language
-        ? translations.sidebar.menu.analytics.en
-        : translations.sidebar.menu.analytics.tr,
+      name: translations.sidebar.menu.analytics[isEnglish?"en":"tr"],
       icon: TrendingUp,
       color: "#3B82F6",
       path: "/analytics",
