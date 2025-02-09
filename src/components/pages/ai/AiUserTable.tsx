@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 import { useSelector } from "react-redux";
 import "@ant-design/v5-patch-for-react-19";
-import { Table, Tag, Button, Avatar } from "antd";
+import { Table, Tag, Button, Avatar, theme } from "antd";
 import translations from "@/Data/translations.json";
 import { RootState } from "@/redux/store/store";
+import { ConfigProvider } from "antd";
 
 const registeredUsers = [
   {
@@ -78,6 +79,7 @@ export default function AiUserTable() {
   const [activeTab, setActiveTab] = useState("registered");
   const data = activeTab === "registered" ? registeredUsers : subscribedUsers;
   const isEnglish = useSelector((state: RootState) => state.language.isEnglish);
+const isDarkMode = useSelector((state: RootState) => state.theme.isDarkMode);
 
   const columns = [
     {
@@ -115,41 +117,34 @@ export default function AiUserTable() {
   ];
 
   return (
-    <div
-      style={{
-        background: "#fff",
-        padding: 16,
-        borderRadius: 8,
-        boxShadow: "0px 2px 10px rgba(0, 0, 0, 0.1)",
+    <ConfigProvider
+      theme={{
+        algorithm: isDarkMode ? theme.darkAlgorithm: theme.defaultAlgorithm,
       }}
-      className="h-full"
     >
       <div
-        style={{
-          display: "flex",
-          justifyContent: "space-between",
-          marginBottom: 16,
-        }}
+        className="p-4 rounded-lg shadow-md bg-white dark:bg-gray-800"
       >
-        <div>
-          <Button
-            type={activeTab === "registered" ? "primary" : "default"}
-            onClick={() => setActiveTab("registered")}
-            style={{ marginRight: 8 }}
-          >
-            {translations.dashboard.ai.userTable.latestRgs[isEnglish ? "en" : "tr"]}{" "}
-            (35)
-          </Button>
-          <Button
-            type={activeTab === "subscribed" ? "primary" : "default"}
-            onClick={() => setActiveTab("subscribed")}
-          >
-            {isEnglish ? "Latest Subscribe" : "Son Aboneler"} (20)
-          </Button>
+        <div className="flex justify-between mb-4 dark:bg-gray-800">
+          <div>
+            <Button
+              type={activeTab === "registered" ? "primary" : "default"}
+              onClick={() => setActiveTab("registered")}
+              style={{ marginRight: 8 }}
+            >
+              {translations.dashboard.ai.userTable.latestRgs[isEnglish ? "en" : "tr"]} (35)
+            </Button>
+            <Button
+              type={activeTab === "subscribed" ? "primary" : "default"}
+              onClick={() => setActiveTab("subscribed")}
+            >
+              {isEnglish ? "Latest Subscribe" : "Son Aboneler"} (20)
+            </Button>
+          </div>
         </div>
+        <Table columns={columns} dataSource={data} pagination={false} />
       </div>
-
-      <Table columns={columns} dataSource={data} pagination={false} />
-    </div>
+    </ConfigProvider>
   );
 }
+

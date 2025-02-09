@@ -40,8 +40,7 @@ const UsersOverview = () => {
           } ▼
         </button>
       </div>
-      <div className="mt-4 ">
-        <ResponsiveContainer width="100%" height="100%">
+        <ResponsiveContainer width="100%" height="85%">
           <PieChart>
             <Pie
               data={data}
@@ -66,7 +65,6 @@ const UsersOverview = () => {
             />
           </PieChart>
         </ResponsiveContainer>
-      </div>
     </div>
   );
 };

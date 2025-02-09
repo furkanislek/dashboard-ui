@@ -34,7 +34,7 @@ const Sidebar = () => {
       name:  translations.sidebar.menu.crm[isEnglish?"en":"tr"],
       icon: ShoppingBag,
       color: "#8B5CF6",
-      path: "/products",
+      path: "/crm",
     },
     {
       name:  translations.sidebar.menu.ecommerce[isEnglish?"en":"tr"],

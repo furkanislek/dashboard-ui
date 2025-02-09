@@ -61,17 +61,17 @@ export default function LatestTransaction() {
   return (
     <div
       style={{
-        background: "#fff",
         padding: 16,
         borderRadius: 8,
         boxShadow: "0px 2px 10px rgba(0, 0, 0, 0.1)",
       }}
-      className="h-full flex flex-col "
+      className="h-full flex flex-col bg-white dark:bg-gray-800 "
     >
       <div className="flex flex-row justify-between ">
         <h2 className="font-semibold text-lg">{isEnglish ? "Latest Transactions" : "Son İşlemler"}</h2>
-        <h3 className="font-medium text-blue-800 text-md cursor-pointer">{isEnglish ? "View All" : "Tümünü Gör"} </h3>
+        <h3 className="font-medium text-blue-800 text-md dark:text-white  cursor-pointer">{isEnglish ? "View All" : "Tümünü Gör"} </h3>
       </div>
+      <hr/>
       <div className="mt-8">
         {data.map((item: any, key: any) => (
           <div key={key} className="mt-4 flex justify-between align-center">

@@ -86,7 +86,7 @@ const AIPage = () => {
             }
             icon={"./totalIncome.svg"}
             value={"$42,400"}
-            color="linear-gradient(90deg, #E8FFF5 0%, #FFFFFF 100%)"
+            color="linear-gradient(90deg,rgb(124, 143, 135) 0%, #FFFFFF 100%)"
             status={true}
             stateValue={"+$20,000"}
             information={
