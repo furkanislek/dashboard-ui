@@ -1,9 +1,13 @@
 import React, { useState } from "react";
 import { Progress } from "antd";
 import { MailCheck, Globe, Facebook, MapPinOff } from "lucide-react";
+import translations from "@/Data/translations.json";
+import { useSelector } from "react-redux";
+import { RootState } from "@/redux/store/store";
 
 const Campaigns = () => {
   const [selectedPeriod, setSelectedPeriod] = useState("Monthly");
+  const isEnglish = useSelector((state: RootState) => state.language.isEnglish);
 
   const data = [
     {
@@ -35,14 +39,16 @@ const Campaigns = () => {
     <div className="bg-white shadow-md rounded-lg p-6 dark:bg-gray-800 h-full">
       <div className="flex flex-col justify-between h-full">
         <div className="flex flex-row justify-between">
-          <h2 className="font-semibold text-lg">Campaigns</h2>
+          <h2 className="font-semibold text-lg">
+            {translations.dashboard.crm.campaigns.title[isEnglish ? "en" : "tr"]}
+          </h2>
           <select
             className="border rounded px-2 py-1 dark:bg-gray-800 dark:text-gray-200"
             value={selectedPeriod}
             onChange={(e) => setSelectedPeriod(e.target.value)}
           >
-            <option value="Yearly">Yearly</option>
-            <option value="Monthly">Monthly</option>
+            <option value="Yearly">{translations.common.perYear[isEnglish ? "en" : "tr"]}</option>
+            <option value="Monthly">{translations.common.perMonth[isEnglish ? "en" : "tr"]}</option>
           </select>
         </div>
         {data.map((item, key) => (

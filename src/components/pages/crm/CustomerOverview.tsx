@@ -1,30 +1,33 @@
 "use client";
 
 import React from "react";
-import { Card } from "antd";
 import { PieChart, Pie, Cell } from "recharts";
+import translations from "@/Data/translations.json";
+import { useSelector } from "react-redux";
+import { RootState } from "@/redux/store/store";
 
 const COLORS = ["#3b82f6", "#f59e0b", "#10b981"];
 
-const data = [
-  { name: "Total", value: 1500, color: COLORS[0] },
-  { name: "New", value: 500, color: COLORS[1] },
-  { name: "Active", value: 500, color: COLORS[2] },
-];
-
 const CustomerOverview = () => {
+  const isEnglish = useSelector((state: RootState) => state.language.isEnglish);
+  const data = [
+    { name: translations.common.total[isEnglish ? "en":"tr"], value: 1500, color: COLORS[0] },
+    { name:translations.common.new[isEnglish ? "en":"tr"], value: 500, color: COLORS[1] },
+    { name: translations.common.active[isEnglish ? "en":"tr"], value: 500, color: COLORS[2] },
+  ];
+
   return (
-    <div className="w-full p-6 max-w-sm shadow-md rounded-xl dark:bg-gray-800">
+    <div className="w-full p-6 bg-white max-w-sm shadow-md rounded-xl dark:bg-gray-800">
       <div className="flex justify-between items-center mb-4">
         <h3 className="font-semibold text-lg dark:text-gray-200">
-          Customer Overview
+          {translations.dashboard.crm.overview.title[isEnglish ?"en":"tr"]}
         </h3>
         <select
           defaultValue="Monthly"
           className="border rounded px-2 py-1 dark:bg-gray-800 dark:text-gray-200"
         >
-          <option value="Monthly">Monthly</option>
-          <option value="Yearly">Yearly</option>
+           <option value="Yearly">{translations.common.perYear[isEnglish ? "en" : "tr"]}</option>
+            <option value="Monthly">{translations.common.perMonth[isEnglish ? "en" : "tr"]}</option>
         </select>
       </div>
 
@@ -61,7 +64,9 @@ const CustomerOverview = () => {
         </PieChart>
       </div>
 
-      <p className="text-center text-sm text-gray-500 mt-2">Customer Report</p>
+      <p className="text-center text-sm text-gray-500 mt-2">
+        {translations.dashboard.crm.overview.report[isEnglish?"en":"tr"]}
+      </p>
     </div>
   );
 };

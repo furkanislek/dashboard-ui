@@ -142,6 +142,26 @@
         "tr": "Cmt",
         "en": "Sat"
       }
+    },
+    "perYear": {
+      "en": "Yearly",
+      "tr": "Yıllık"
+    },
+    "perMonth": {
+      "en": "Monthly",
+      "tr": "Aylık"
+    },
+    "new": {
+      "tr": "Yeni",
+      "en": "New"
+    },
+    "total": {
+      "tr": "Toplam",
+      "en": "Total"
+    },
+    "active": {
+      "tr": "Aktif",
+      "en": "Active"
     }
   },
   "dashboard": {
@@ -224,6 +244,24 @@
         "latestRgs": {
           "tr": "Son Kayıtlı",
           "en": "Latest Registered"
+        }
+      }
+    },
+    "crm":{
+      "campaigns" : {
+        "title":{
+          "en":"Campaigns",
+          "tr":"Kampanyalar"
+        }
+      },
+      "overview": {
+        "title":{
+          "en":"Customer Overview",
+          "tr":"Müşteriye Genel Bakış"
+        },
+        "report":{
+          "en":"Customer Report",
+          "tr":"Müşteri Rapor"
         }
       }
     }

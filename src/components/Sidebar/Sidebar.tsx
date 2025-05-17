@@ -25,52 +25,16 @@ const Sidebar = () => {
 
   const SIDEBAR_ITEMS = [
     {
-      name: translations.sidebar.menu.ai[isEnglish?"en":"tr"],
+      name: translations.sidebar.menu.ai[isEnglish ? "en" : "tr"],
       icon: BarChart2,
       color: "#6366f1",
       path: "/",
     },
     {
-      name:  translations.sidebar.menu.crm[isEnglish?"en":"tr"],
+      name: translations.sidebar.menu.crm[isEnglish ? "en" : "tr"],
       icon: ShoppingBag,
       color: "#8B5CF6",
       path: "/crm",
-    },
-    {
-      name:  translations.sidebar.menu.ecommerce[isEnglish?"en":"tr"],
-      icon: Users,
-      color: "#EC4899",
-      path: "/users",
-    },
-    {
-      name:translations.sidebar.menu.crypto[isEnglish?"en":"tr"],
-      icon: DollarSign,
-      color: "#10B981",
-      path: "/sales",
-    },
-    {
-      name:translations.sidebar.menu.investment[isEnglish?"en":"tr"],
-      icon: ShoppingCart,
-      color: "#F59E0B",
-      path: "/orders",
-    },
-    {
-      name: translations.sidebar.menu.learning[isEnglish?"en":"tr"],
-      icon: Settings,
-      color: "#6EE7B7",
-      path: "/settings",
-    },
-    {
-      name:  translations.sidebar.menu.nft[isEnglish?"en":"tr"],
-      icon: Settings,
-      color: "#6EE7B7",
-      path: "/settings",
-    },
-    {
-      name: translations.sidebar.menu.analytics[isEnglish?"en":"tr"],
-      icon: TrendingUp,
-      color: "#3B82F6",
-      path: "/analytics",
     },
   ];
 

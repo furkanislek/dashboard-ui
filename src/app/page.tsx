@@ -13,6 +13,7 @@ export default function Home() {
   useEffect(() => {
     document.body.className = isDarkMode ? "dark" : "light";
   }, [isDarkMode]);
+  
   return (
     <main className={`min-h-screen ${isDarkMode ? "dark" : "light"} flex`}>
       <Sidebar />
